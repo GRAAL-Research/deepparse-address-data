@@ -10,8 +10,8 @@ The data present in this repository has been generated using data from the
  - A script to *decompress* LZMA archive into *normal* pickle format for Python (`lzma_decompress`).
 
 ## Download the Data
-Our dataset is hosted in the address below in a `zip` format. 
-You can manually download it by cliking [here](https://graal.ift.ulaval.ca/public/deepparse/dataset/) it or you can use `wget`.
+Our dataset is hosted on the address below in a `zip` format. 
+You can manually download it by clicking [here](https://graal.ift.ulaval.ca/public/deepparse/dataset/) it or you can use `wget`.
 
 ```bash
 wget https://graal.ift.ulaval.ca/public/deepparse/dataset/data.zip
