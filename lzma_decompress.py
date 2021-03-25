@@ -37,7 +37,7 @@ def main(args) -> None:
         pickled_data = compress_pickle.load(path, compression="lzma")
         filename = path.split("/")[-1].replace(".lzma", ".p")  # get the filename and convert .lzma extension to .p
 
-        file_path = os.path.join(*path.split("/")[6:-1])  # extract the directory tree
+        file_path = os.path.join(*path.split("/")[-4:-1])  # extract the directory tree
         path_to_save = os.path.join(args.path_to_save,
                                     file_path)  # append the tree with the path to the saving directory
         os.makedirs(path_to_save, exist_ok=True)  # create directory tree if doesn't already exist
