@@ -10,8 +10,8 @@ The data present in this repository has been generated using data from the
  - A script to *decompress* LZMA archive into *normal* pickle format for Python (`lzma_decompress`).
 
 ## Download the Data
-Our dataset is hosted [here](https://graal.ift.ulaval.ca/public/deepparse/dataset/) in a `zip` format. 
-You can manually download it by clinking on it or you can use `wget`.
+Our dataset is hosted on the address below in a `zip` format. 
+You can manually download it by clicking [here](https://graal.ift.ulaval.ca/public/deepparse/dataset/) it or you can use `wget`.
 
 ```bash
 wget https://graal.ift.ulaval.ca/public/deepparse/dataset/data.zip
@@ -87,15 +87,15 @@ python3 make_dataset.py -h
 to get information about the arguments needed to run the script.
 
 ## About the `lzma_decompress` Script
-Since the dataset is pretty large (especially for Github hosting), we have used the `LZMA` compress algorithm using 
-Python to make our files as smaller as possible. To do so, we used the convenient 
+Since the dataset is pretty large (especially for Github hosting), we have used the `LZMA` compressing algorithm using 
+Python to make our files as small as possible. To do so, we used the convenient 
 [`compress_pickle`](https://pypi.org/project/compress-pickle/) wrapper library to compress the data. Since `LZMA` 
 is really slow to decompress, we provide a script to decompress it into standard pickle format. 
 
-The script will decompress the data files into the `path_to_save` directory, and will create the same subdirectory as
-described earlier (`clean_data` and `incomplete_data` plus the subdirectory `train`, `test` and `zero_shot`).
+The script will decompress the data files into the `path_to_save` directory provided as an argument, and will create the same subdirectory as
+described earlier (`clean_data` and `incomplete_data` plus the subdirectories `train`, `test` and `zero_shot`).
 
-This script take a couple of minutes to execute.
+This script takes a couple of minutes to execute.
 
 ## Cite the Dataset
 
@@ -137,12 +137,12 @@ engines such as <a href="https://g.co/datasetsearch">Google Dataset Search</a>.
   </tr>
   <tr>
     <td>url</td>
-    <td><code itemprop="url">hhttps://github.com/GRAAL-Research/deepparse-address-data</code></td>
+    <td><code itemprop="url">https://github.com/GRAAL-Research/deepparse-address-data</code></td>
   </tr>
   <tr>
     <td>description</td>
     <td><code itemprop="description">The Multinational Structured Address Dataset is a collection of addresses of
-        61 differents contries. The address can either be "complete" (all the usual address component) or "incomplet"
+        61 differents contries. The addresses can either be "complete" (all the usual address component) or "incomplet"
         (missing some usual address component). \n Example of addresses 
         ![preview](https://rawcdn.githack.com/GRAAL-Research/deepparse-address-data/master/address_parsing_example.png)\n
     </code></td>
