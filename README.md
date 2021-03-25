@@ -147,6 +147,35 @@ engines such as <a href="https://g.co/datasetsearch">Google Dataset Search</a>.
         ![preview](https://rawcdn.githack.com/GRAAL-Research/deepparse-address-data/master/address_parsing_example.png)\n
     </code></td>
   </tr>
+    <tr>
+        <td>creator</td>
+        <td>
+          <div itemscope itemtype="http://schema.org/person" itemprop="creator">
+            <table>
+              <tr>
+                <th>property</th>
+                <th>value</th>
+              </tr>
+              <tr>
+                <td>name</td>
+                <td><code itemprop="name">Marouane Yassine</code></td>
+              </tr>
+              <tr>
+                <td>sameAs</td>
+                <td><code itemprop="sameAs">https://scholar.google.com/citations?user=EjZyhCAAAAAJ&hl=fr&oi=sra</code></td>
+              </tr>
+                <tr>
+                <td>name</td>
+                <td><code itemprop="name">David Beauchemin</code></td>
+              </tr>
+              <tr>
+                <td>sameAs</td>
+                <td><code itemprop="sameAs">https://scholar.google.com/citations?hl=fr&user=ntoPgSUAAAAJ</code></td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
   <tr>
     <td>provider</td>
     <td>
