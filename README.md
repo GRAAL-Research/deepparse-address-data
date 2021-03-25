@@ -17,7 +17,6 @@ You can manually download it by clinking on it or you can use `wget`.
 wget https://graal.ift.ulaval.ca/public/deepparse/dataset/data.zip
 ```
 
-
 ## About the Data
 The data is split into two main categories:
 
@@ -110,3 +109,89 @@ If you use the data provided with this repository, please cite us using the foll
     note   = {\url{https://github.com/GRAAL-Research/deepparse-address-data}}
 }
 ```
+
+## License
+This dataset is under [MIT License](https://mit-license.org/)
+
+## Dataset Metadata
+The following table is necessary for this dataset to be indexed by search
+engines such as <a href="https://g.co/datasetsearch">Google Dataset Search</a>.
+
+<div itemscope itemtype="http://schema.org/Dataset">
+<table>
+  <tr>
+    <th>property</th>
+    <th>value</th>
+  </tr>
+  <tr>
+    <td>name</td>
+    <td><code itemprop="name">Multinational Structured Address Dataset</code></td>
+  </tr>
+  <tr>
+    <td>alternateName</td>
+    <td><code itemprop="alternateName">Address Parser Dataset</code></td>
+  </tr>
+  <tr>
+    <td>alternateName</td>
+    <td><code itemprop="alternateName">deepparse-dataset</code></td>
+  </tr>
+  <tr>
+    <td>url</td>
+    <td><code itemprop="url">hhttps://github.com/GRAAL-Research/deepparse-address-data</code></td>
+  </tr>
+  <tr>
+    <td>description</td>
+    <td><code itemprop="description">The Multinational Structured Address Dataset is a collection of addresses of
+        61 differents contries. The address can either be "complete" (all the usual address component) or "incomplet"
+        (missing some usual address component). \n Example of addresses 
+        ![preview](https://rawcdn.githack.com/GRAAL-Research/deepparse-address-data/master/address_parsing_example.png)\n
+    </code></td>
+  </tr>
+  <tr>
+    <td>provider</td>
+    <td>
+      <div itemscope itemtype="http://schema.org/Organization" itemprop="provider">
+        <table>
+          <tr>
+            <th>property</th>
+            <th>value</th>
+          </tr>
+          <tr>
+            <td>name</td>
+            <td><code itemprop="name">GRAIL</code></td>
+          </tr>
+          <tr>
+            <td>sameAs</td>
+            <td><code itemprop="sameAs">https://grail.ift.ulaval.ca/</code></td>
+          </tr>
+        </table>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>license</td>
+    <td>
+      <div itemscope itemtype="http://schema.org/CreativeWork" itemprop="license">
+        <table>
+          <tr>
+            <th>property</th>
+            <th>value</th>
+          </tr>
+          <tr>
+            <td>name</td>
+            <td><code itemprop="name">MIT</code></td>
+          </tr>
+          <tr>
+            <td>url</td>
+            <td><code itemprop="url">https://mit-license.org/</code></td>
+          </tr>
+        </table>
+      </div>
+    </td>
+  </tr>
+    <tr>
+    <td>citation</td>
+    <td><code itemprop="citation">https://arxiv.org/abs/2006.16152</code></td>
+  </tr>
+</table>
+</div>
