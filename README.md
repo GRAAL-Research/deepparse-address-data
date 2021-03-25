@@ -6,10 +6,18 @@ The data present in this repository has been generated using data from the
 [lipbostal](https://github.com/openvenues/libpostal) project.
 
 ## Content of the Project
+ - The script to merge all the countries' datasets into a single one (`make_dataset`).
+ - A script to *decompress* LZMA archive into *normal* pickle format for Python (`lzma_decompress`).
 
- - The data
- - The script to merge all the countries' datasets into a single one.
- - A script to *decompress* LZMA archive into *normal* pickle format for Python.
+## Download the Data
+Since our dataset is too *large* for GitHub and we were stuck with bandwidth limits, the dataset is available in a
+`zip` format on Google Drive. You can manually download it using this 
+[link](https://drive.google.com/u/5/uc?id=1t6AZXO51PIKl5GIkD-bpwBBopQiyeAce&export=download) or use the following command
+
+```python3
+pip install gdown
+gdown --id 1t6AZXO51PIKl5GIkD-bpwBBopQiyeAce --output data.zip
+```
 
 ## About the Data
 The data is split into two main categories:
@@ -37,6 +45,7 @@ country for the `train` & `test` dataset. Each directory contains data for 20 co
 > Figure 1. The number of data samples per country in the train and test datasets for **clean data**.
 
 The `zero_shot` dataset contains data for an additional 41 countries. The number of data samples per country is described in Figure 2.
+
 | Country                |   Number of samples | Country                           |   Number of samples |
 |:-----------------------|--------------------:|:----------------------------------|--------------------:|
 | Latvia                 |               1,325 | Faroe Islands                     |               2,982 |
@@ -79,7 +88,7 @@ python3 make_dataset.py -h
 ```
 to get information about the arguments needed to run the script.
 
-## About the `` Script
+## About the `lzma_decompress` Script
 Since the dataset is pretty large (especially for Github hosting), we have used the `LZMA` compress algorithm using 
 Python to make our files as smaller as possible. To do so, we used the convenient 
 [`compress_pickle`](https://pypi.org/project/compress-pickle/) wrapper library to compress the data. Since `LZMA` 
