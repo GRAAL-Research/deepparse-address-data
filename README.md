@@ -10,14 +10,13 @@ The data present in this repository has been generated using data from the
  - A script to *decompress* LZMA archive into *normal* pickle format for Python (`lzma_decompress`).
 
 ## Download the Data
-Since our dataset is too *large* for GitHub and we were stuck with bandwidth limits, the dataset is available in a
-`zip` format on Google Drive. You can manually download it using this 
-[link](https://drive.google.com/u/5/uc?id=1t6AZXO51PIKl5GIkD-bpwBBopQiyeAce&export=download) or use the following command
+Our dataset is hosted [here](https://graal.ift.ulaval.ca/public/deepparse/dataset/) in a `zip` format. 
+You can manually download it by clinking on it or you can use `wget`.
 
-```python3
-pip install gdown
-gdown --id 1t6AZXO51PIKl5GIkD-bpwBBopQiyeAce --output data.zip
+```bash
+wget https://graal.ift.ulaval.ca/public/deepparse/dataset/data.zip
 ```
+
 
 ## About the Data
 The data is split into two main categories:
