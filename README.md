@@ -141,9 +141,7 @@ engines such as <a href="https://g.co/datasetsearch">Google Dataset Search</a>.
   </tr>
   <tr>
     <td>description</td>
-    <td><code itemprop="description">The Multinational Structured Address Dataset is a collection of addresses of
-        61 differents contries. The addresses can either be "complete" (all the usual address component) or "incomplet"
-        (missing some usual address component). \n Example of addresses 
+    <td><code itemprop="description">The Multinational Structured Address Dataset is a collection of addresses of 61 different countries. The addresses can either be "complete" (all the usual address components) or "incomplete" (missing some usual address components). \n Example of addresses 
         ![preview](https://rawcdn.githack.com/GRAAL-Research/deepparse-address-data/master/address_parsing_example.png)\n
     </code></td>
   </tr>
