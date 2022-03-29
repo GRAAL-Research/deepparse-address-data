@@ -11,7 +11,7 @@ The data present in this repository has been generated using data from the
 
 ## Download the Data
 Our dataset is hosted on the address below in a `zip` format. 
-You can manually download it by clicking [here](https://graal.ift.ulaval.ca/public/deepparse/dataset/) it or you can use `wget`.
+You can manually download it by clicking [here](https://graal.ift.ulaval.ca/public/deepparse/dataset/) or you can use `wget` as follow:
 
 ```bash
 wget https://graal.ift.ulaval.ca/public/deepparse/dataset/data.zip
