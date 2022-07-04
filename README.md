@@ -74,6 +74,9 @@ The `zero_shot` dataset contains data for an additional 41 countries. The number
 The *incomplete* directory contains two subdirectories, each containing address data for the 20 countries listed in Figure 1. 
 The `train` subdirectory contains 50,000 addresses per country, and the `test` subdirectory contains 25,000 per country.
 
+### About the [`hyphen_unit_street_number.p`](https://graal.ift.ulaval.ca/public/deepparse/dataset/hyphen_unit_street_number.p) Data
+Some countries use a hyphen to split the unit from the street number (e.g. 3-305 a street name, where 3 is the unit and 305 is the street number), and none were properly parsed in the training data. We have created a new dataset with such cases. The dataset consists of 3 012 automatically parsed addresses using regex where the hyphen has been removed, and tags have been adjusted. Namely, before the address '3-305 a street name' tags would have been `[StreetNumber, StreetName, StreetName, StreetName]`. In this dataset, the address is '3 305 a street name', and the tags are `[Unit, StreetNumber, StreetName, StreetName, StreetName]`.
+
 ## About the `make_dataset` Script
 
 The `make_dataset` script merges all the individual files in a particular folder into one dataset. 
