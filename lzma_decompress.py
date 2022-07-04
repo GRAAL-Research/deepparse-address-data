@@ -41,8 +41,6 @@ def main(args) -> None:
         with open(os.path.join(path_to_save, filename), "ab") as f :
             for line in pickled_data:
                 f.write(pickle.dumps(line))
-        #below line commented - causes memory error - handled in chunked mode with above code 
-        #pickle.dump(pickled_data, open(os.path.join(path_to_save, filename), "wb"))  # dump in normal pickle format
 
 
 if __name__ == "__main__":
