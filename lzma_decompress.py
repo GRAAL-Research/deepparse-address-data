@@ -37,7 +37,7 @@ def main(args) -> None:
         path_to_save = os.path.join(args.path_to_save,
                                     file_path)  # append the tree with the path to the saving directory
         os.makedirs(path_to_save, exist_ok=True)  # create directory tree if doesn't already exist
-        #dump in pickle format in chunked mode
+        # dump in pickle format in chunked mode
         with open(os.path.join(path_to_save, filename), "ab") as f :
             for line in pickled_data:
                 f.write(pickle.dumps(line))
