@@ -41,10 +41,12 @@ def main(args) -> None:
         with open(os.path.join(path_to_save, filename), "ab") as f :
             for line in pickled_data:
                 f.write(pickle.dumps(line))
-
+        
+        # cleanup of the LZMA file
+        os.remove(path)
 
 if __name__ == "__main__":
-    parser = ArgumentParser(description='Decompress all the LZMA pickled file into "normal" pickled file.')
+    parser = ArgumentParser(descripos.remove(path)tion='Decompress all the LZMA pickled file into "normal" pickled file.')
 
     parser.add_argument("files_directory", type=str, help="The directory where the files to decompress are located.")
     parser.add_argument("path_to_save", type=str, help="The directory where to save the decompress files.")
