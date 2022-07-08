@@ -38,9 +38,8 @@ def main(args) -> None:
                                     file_path)  # append the tree with the path to the saving directory
         os.makedirs(path_to_save, exist_ok=True)  # create directory tree if doesn't already exist
         # dump in pickle format in chunked mode
-        with open(os.path.join(path_to_save, filename), "ab") as f :
-            for line in pickled_data:
-                f.write(pickle.dumps(line))
+        with open(os.path.join(path_to_save, filename), "wb") as file:
+            pickle.dump(pickled_data, file)
         
         # cleanup of the LZMA file
         os.remove(path)
