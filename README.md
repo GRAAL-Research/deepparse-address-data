@@ -10,12 +10,17 @@ The data present in this repository has been generated using data from the
  - A script to *decompress* LZMA archive into *normal* pickle format for Python (`lzma_decompress`).
 
 ## Download the Data
-Our dataset is hosted on the address below in a `zip` format. 
-You can manually download it by clicking [here](https://graal.ift.ulaval.ca/public/deepparse/dataset/) or you can use `wget` as follow:
+The `zip` archive of this dataset was hosted on a GRAAL server (`graal.ift.ulaval.ca/public/deepparse/dataset/data.zip`)
+that no longer serves it: **this dataset is no longer available for download**. This repository keeps the description of
+the data and the scripts used to build it.
 
-```bash
-wget https://graal.ift.ulaval.ca/public/deepparse/dataset/data.zip
-```
+Our current address data is the [worldwide-addresses](https://huggingface.co/datasets/deepparse/worldwide-addresses)
+dataset on the HuggingFace Hub (one configuration per country, 240 countries), also built from the
+[libpostal](https://github.com/openvenues/libpostal) data. Note that its tags differ: it has no `Orientation` nor
+`GeneralDelivery` tags, and it has `Suburb`, `District`, `County` and `Country` tags (deepparse maps `Suburb` and
+`District` to `Municipality` and removes the `County` and `Country` words). A release of the libpostal parser training
+data (March 2017) is archived on the
+[Internet Archive](https://archive.org/details/libpostal-parser-training-data-20170304).
 
 ## About the Data
 The data is split into two main categories:
